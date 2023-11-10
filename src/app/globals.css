@@ -25,3 +25,16 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.explore {
+  background: var(
+    --primary-101,
+    linear-gradient(257deg, #0698f9 13.5%, #f906f9 87.25%)
+  );
+}
+.a {
+  transform: rotate(39.184deg);
+  background: var(
+    --primary-101,
+    linear-gradient(257deg, #0698f9 13.5%, #f906f9 87.25%)
+  );
+}
