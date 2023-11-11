@@ -12,6 +12,7 @@ const config: Config = {
         "cyan-blue": "#BDCADB",
         blue: "#21204A",
         white: "#FFF",
+        "soft-peach": "#FDE7FD",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

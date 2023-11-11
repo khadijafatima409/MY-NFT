@@ -38,3 +38,15 @@ body {
     linear-gradient(257deg, #0698f9 13.5%, #f906f9 87.25%)
   );
 }
+.price {
+  background: linear-gradient(
+      0deg,
+      rgba(23, 23, 25, 0.1) 0%,
+      rgba(23, 23, 25, 0.1) 100%
+    ),
+    linear-gradient(
+      276deg,
+      rgba(20, 161, 255, 0.5) 13.18%,
+      rgba(245, 61, 245, 0.5) 93.73%
+    );
+}
