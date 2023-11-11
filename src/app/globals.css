@@ -50,3 +50,12 @@ body {
       rgba(245, 61, 245, 0.5) 93.73%
     );
 }
+.gradient-text {
+  background: var(
+    --primary-101,
+    linear-gradient(257deg, #0698f9 77.5%, #f906f9 100.25%)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
