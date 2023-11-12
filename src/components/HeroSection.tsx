@@ -8,7 +8,7 @@ const HeroSetion = () => {
       <div className=" w-[80%] mx-auto">
         <NavBar />
         <div className=" flex py-10 gap-4">
-          <div className="w-[50%] text-start flex flex-col gap-12 justify-center items-start py-14 px-3 border">
+          <div className="w-[50%] text-start flex flex-col gap-12 justify-center items-start py-14 px-3 ">
             <div className="flex flex-col gap-6">
               <h1 className="font-bold text-base text-white  md:text-3xl lg:text-4xl xl:text-5xl">
                 Discover, collect, and sell extraordinary NFTs
@@ -19,27 +19,17 @@ const HeroSetion = () => {
                 Exercitation veniam consequat sunt nostrud amet.
               </p>
             </div>
-            {/* <button className="explore py-1  pl-6 pr-1 rounded-[12px] text-white flex gap-3 font-medium items-center">
-              Explore now
-              <a href="#arrow" className="p-2 bg-white rounded-[10px]">
-                <Image
-                  src="/hero/arrow-right.svg"
-                  alt=""
-                  width={20}
-                  height={20}
-                />
-              </a>
-            </button> */}
-            {/* <a href="#arrow" className="p-2 bg-white rounded-[10px]"> */}
-            <CustomButton
-              btnText=" Explore now"
-              btnIcon="/hero/arrow-right.svg"
-              className="explore py-1 pl-6 pr-2 rounded-[12px] text-white flex gap-3 font-medium items-center"
-              btnIconClassName="p-2 bg-white rounded-[10px]"
-            />
-            {/* </a> */}
+
+            <a href="#arrow">
+              <CustomButton
+                btnText=" Explore now"
+                btnIcon="/hero/arrow-right.svg"
+                className="explore py-1.5 pl-6 pr-2 rounded-[12px] text-white flex gap-3 font-medium items-center"
+                btnIconClassName="p-2 bg-white rounded-[10px]"
+              />
+            </a>
           </div>
-          <div className="w-[50%] relative border">
+          <div className="w-[50%] relative ">
             <div className="absolute w-full h-full">
               <Image
                 alt="plant"
@@ -67,10 +57,10 @@ const HeroSetion = () => {
               src="/hero/NFT01.png"
               width="600"
               height="195"
-              className="absolute mt-24 ml-5  border"
+              className="absolute mt-24 ml-5 "
               alt="NFT"
             />
-            <div className=" absolute gap-5  flex flex-col rotate-[36.184deg] top-[64%] left-[8%] p-2">
+            <div className=" absolute gap-5  flex flex-col rotate-[36.184deg] top-[62%] left-[7%] p-2">
               <div className="">
                 <h2 className=" text-soft-peach text-xs">Collection name</h2>
                 <h1 className="text-white text-base">
