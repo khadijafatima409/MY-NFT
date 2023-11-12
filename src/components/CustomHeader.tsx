@@ -1,4 +1,5 @@
 import React from "react";
+
 import Image from "next/image";
 
 const CustomHeader = () => {
@@ -12,11 +13,11 @@ const CustomHeader = () => {
           <select
             name="cars"
             id="cars"
-            className="rounded-[12px] bg-aqua text-base px-3 w-36 outline-none border-none"
+            className="rounded-[12px] bg-aqua text-lg text-zodiac pl-3 w-36 outline-none border-transparent border-r-8 border-solid"
           >
             <option value="volvo">Ethereum</option>
-            <option value="saab">Saab</option>
             <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
             <option value="audi">Audi</option>
           </select>
         </div>
