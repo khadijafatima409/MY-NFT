@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 import Image from "next/image";
+import CustomButton from "./CustomButton";
 const HeroSetion = () => {
   return (
     <div className=" bg-[url('/hero/Noise.svg')] bg-blue bg-cover bg-center bg-no-repeat h-screen">
@@ -18,7 +19,7 @@ const HeroSetion = () => {
                 Exercitation veniam consequat sunt nostrud amet.
               </p>
             </div>
-            <button className="explore py-1  pl-6 pr-1 rounded-[12px] text-white flex gap-3 font-medium items-center">
+            {/* <button className="explore py-1  pl-6 pr-1 rounded-[12px] text-white flex gap-3 font-medium items-center">
               Explore now
               <a href="#arrow" className="p-2 bg-white rounded-[10px]">
                 <Image
@@ -28,7 +29,15 @@ const HeroSetion = () => {
                   height={20}
                 />
               </a>
-            </button>
+            </button> */}
+            {/* <a href="#arrow" className="p-2 bg-white rounded-[10px]"> */}
+            <CustomButton
+              btnText=" Explore now"
+              btnIcon="/hero/arrow-right.svg"
+              className="explore py-1 pl-6 pr-2 rounded-[12px] text-white flex gap-3 font-medium items-center"
+              btnIconClassName="p-2 bg-white rounded-[10px]"
+            />
+            {/* </a> */}
           </div>
           <div className="w-[50%] relative border">
             <div className="absolute w-full h-full">

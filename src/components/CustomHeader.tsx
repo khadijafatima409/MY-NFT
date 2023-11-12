@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
+import CustomButton from "./CustomButton";
 
 const CustomHeader = () => {
   return (
@@ -22,12 +23,18 @@ const CustomHeader = () => {
           </select>
         </div>
         <div className=" flex gap-3">
-          <button
+          {/* <button
             type="button"
             className={`border-2 border-solid border-light-steel-blue py-2 px-4 rounded-[12px] bg-transparent text-light-steel-blue `}
           >
             See all
-          </button>
+          </button> */}
+          <a href="#seeall">
+            <CustomButton
+              btnText="See all"
+              className="border-2 border-solid border-light-steel-blue py-2 px-4 rounded-[12px] bg-transparent text-light-steel-blue"
+            />
+          </a>
           <button
             type="button"
             className={`border-2 border-solid border-cyan-blue py-3 px-4 rounded-[12px] bg-transparent text-light-steel-blue `}

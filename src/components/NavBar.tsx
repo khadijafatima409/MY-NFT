@@ -1,4 +1,5 @@
 import React from "react";
+import CustomButton from "./CustomButton";
 
 const NavBar = () => {
   return (
@@ -24,9 +25,13 @@ const NavBar = () => {
           <img src="/search.svg" alt="" />
         </li>
         <a href="#connect" className=" text-cyan-blue hover:text-white">
-          <button className="border px-4 py-3 rounded-[12px]">
+          {/* <button className="border px-4 py-3 rounded-[12px]">
             Connect wallet
-          </button>
+          </button> */}
+          <CustomButton
+            btnText="Connect wallet"
+            className="border px-4 py-3 rounded-[12px]"
+          />
         </a>
       </ul>
     </div>
