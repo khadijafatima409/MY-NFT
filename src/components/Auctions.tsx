@@ -4,8 +4,8 @@ import AuctionsCards from "./AuctionsCard";
 
 const Auctions = () => {
   return (
-    <div className="border ">
-      <div className="w-[80%] mx-auto border py-20  ">
+    <div className="">
+      <div className="w-[80%] mx-auto py-20  ">
         <CustomHeader />
         <AuctionsCards />
       </div>

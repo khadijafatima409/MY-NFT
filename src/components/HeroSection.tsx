@@ -2,6 +2,8 @@ import React from "react";
 import NavBar from "./NavBar";
 import Image from "next/image";
 import CustomButton from "./CustomButton";
+import heroCardImage from "../../public/hero/NFT01.png";
+
 const HeroSetion = () => {
   return (
     <div className=" bg-[url('/hero/Noise.svg')] bg-blue bg-cover bg-center bg-no-repeat h-screen">
@@ -54,9 +56,9 @@ const HeroSetion = () => {
               />
             </div>
             <Image
-              src="/hero/NFT01.png"
-              width="600"
-              height="195"
+              src={heroCardImage}
+              // width="600"
+              // height="195"
               className="absolute mt-24 ml-5 "
               alt="NFT"
             />
