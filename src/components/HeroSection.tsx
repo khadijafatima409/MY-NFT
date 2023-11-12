@@ -3,16 +3,16 @@ import NavBar from "./NavBar";
 import Image from "next/image";
 const HeroSetion = () => {
   return (
-    <div className=" h-[100vh] bg-[url('/hero/Noise.svg')] bg-blue bg-cover bg-center bg-no-repeat">
+    <div className=" bg-[url('/hero/Noise.svg')] bg-blue bg-cover bg-center bg-no-repeat h-screen">
       <div className=" w-[80%] mx-auto">
         <NavBar />
-        <div className=" flex mt-10 gap-4">
-          <div className="w-[50%] text-start flex flex-col gap-12 justify-center items-start py-14">
+        <div className=" flex py-10 gap-4">
+          <div className="w-[50%] text-start flex flex-col gap-12 justify-center items-start py-14 px-3 border">
             <div className="flex flex-col gap-6">
-              <h1 className="font-bold text-5xl text-white  ">
+              <h1 className="font-bold text-base text-white  md:text-3xl lg:text-4xl xl:text-5xl">
                 Discover, collect, and sell extraordinary NFTs
               </h1>
-              <p className="text-cyan-blue text-lg">
+              <p className="text-cyan-blue text-xs md:text-base xl:text-lg 2xl:text-xl">
                 Amet minim mollit non deserunt ullamco est sit aliqua dolor do
                 amet sint. Velit officia consequat duis enim velit mollit.
                 Exercitation veniam consequat sunt nostrud amet.
@@ -30,38 +30,38 @@ const HeroSetion = () => {
               </a>
             </button>
           </div>
-          <div className="w-[50%] relative">
+          <div className="w-[50%] relative border">
             <div className="absolute w-full h-full">
               <Image
                 alt="plant"
                 src="/hero/icon3.png"
-                width={100}
+                width={150}
                 height={100}
                 className=""
               />
               <Image
                 alt="plant"
                 src="/hero/icon2.png"
-                width={100}
+                width={150}
                 height={100}
                 className="absolute right-0 top-0"
               />
               <Image
                 alt="plant"
                 src="/hero/icon1.png"
-                width={100}
+                width={150}
                 height={100}
-                className="bottom-0 right-0 absolute"
+                className="-bottom-28 right-0 absolute"
               />
             </div>
             <Image
               src="/hero/NFT01.png"
-              width="595"
+              width="600"
               height="195"
-              className="absolute"
+              className="absolute mt-24 ml-5  border"
               alt="NFT"
             />
-            <div className=" absolute gap-5  flex flex-col rotate-[36.184deg] top-[47%] left-[3%] p-2">
+            <div className=" absolute gap-5  flex flex-col rotate-[36.184deg] top-[64%] left-[8%] p-2">
               <div className="">
                 <h2 className=" text-soft-peach text-xs">Collection name</h2>
                 <h1 className="text-white text-base">

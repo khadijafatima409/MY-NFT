@@ -14,7 +14,9 @@ const config: Config = {
         white: "#FFF",
         "soft-peach": "#FDE7FD",
         aqua: "#CDE2FE",
-        "light-steel-blue":"#6692CC"
+        "light-steel-blue": "#6692CC",
+        "grey-blue": "#6E84AB",
+        zodiac: "#11315B",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
