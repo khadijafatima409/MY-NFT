@@ -23,6 +23,8 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "hero-1": "/header/Noise.svg",
+        price:
+          "background: linear-gradient(0deg,rgba(23, 23, 25, 0.1) 0%,rgba(23, 23, 25, 0.1) 100%),linear-gradient(276deg,rgba(20, 161, 255, 0.5) 13.18%,rgba(245, 61, 245, 0.5) 93.73%);",
       },
     },
   },
