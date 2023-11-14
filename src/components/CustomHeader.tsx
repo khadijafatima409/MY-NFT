@@ -5,13 +5,14 @@ import CustomButton from "./CustomButton";
 import CustomSelect from "./CustomSelect";
 interface CustomHeaderProps {
   title: string;
+  className: string;
 }
-const CustomHeader = ({ title }: CustomHeaderProps) => {
+const CustomHeader = ({ title, className }: CustomHeaderProps) => {
   return (
     <div>
       <div className="flex  justify-between">
         <div className="flex gap-10">
-          <h1 className="text-[32px] gradient-text font-semibold">{title}</h1>
+          <h1 className={`text-[32px] font-semibold ${className} `}>{title}</h1>
           <CustomSelect
             defaultSelected="Ethereum"
             items={["Ethereum", "Coin1", "Coin2"]}

@@ -6,7 +6,7 @@ const Auctions = () => {
   return (
     <div className="">
       <div className="w-[80%] mx-auto py-20  ">
-        <CustomHeader title="Hot Auctions" />
+        <CustomHeader title="Hot Auctions" className="gradient-text" />
         <AuctionsCards />
       </div>
     </div>

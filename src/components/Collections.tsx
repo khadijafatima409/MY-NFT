@@ -1,69 +1,71 @@
 import React from "react";
 import CustomHeader from "./CustomHeader";
 import Image from "next/image";
-
+import image1 from "../../public/collections/img1.svg";
+import image2 from "../../public/collections/img2.svg";
+import image3 from "../../public/collections/img3.svg";
+import image4 from "../../public/collections/img4.svg";
 const Collections = () => {
   return (
-    <div className="   w-[80%] mx-auto ">
-      <CustomHeader />
-      <div className=" grid grid-cols-3 pt-10 pb-20">
-        {/* <div className="bg-white rounded-[12px] py-4  w-full border p-2"> */}
-        <div className="grid grid-cols-4 gap-2 bg-white rounded-[12px] py-4  w-full border p-2">
-          <div className="col-span-2 row-span-2  bg-red-500 h-full">1</div>
+    <div className="w-[80%] mx-auto ">
+      <CustomHeader title="Popular Collections" className="text-blue" />
+      <div className="max-w-full  bg-teal-500 pt-10 pb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+        {COLLECTION_CARD.map((elrment) => {
+          return (
+            <>
+              <div className=" bg-white p-4 rounded-[12px]">
+                <div className=" w-full grid grid-cols-4 gap-2">
+                  <div className=" col-span-2 row-span-2   ">
+                    <Image
+                      src={image1}
+                      alt=""
+                      className="w-full  rounded-[12px]"
+                    />
+                  </div>
+                  <div className=" col-span-2 rounded-[12px]  ">
+                    <Image
+                      src={image2}
+                      alt=""
+                      className=" w-full  rounded-[12px] "
+                    />
+                  </div>
+                  <div className="col-span-1">
+                    <Image
+                      src={image3}
+                      alt=""
+                      className="w-full  rounded-[12px]"
+                    />
+                  </div>
+                  <div className="relative">
+                    <Image
+                      src={image4}
+                      alt=""
+                      className="w-full rounded-[12px]"
+                    />
+                    <div className="absolute h-full w-full bg-black opacity-50 top-0 rounded-[12px]">
+                      <h2 className="text-white text-center">+12</h2>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-col pt-2">
+                  <div className="flex justify-between text-blue font-semibold text-base">
+                    <h1>NFT name Ex Shiba Astronaut</h1>
 
-          <div className="col-span-2  row-span-2 bg-green-500 h-full">2</div>
-
-          <div className="col-span-1  row-span-1 bg-red-500 h-full">3</div>
-
-          <div className="col-span-1  row-span-1 bg-yellow-500 h-full">4</div>
-        </div>
-        {/* </div> */}
-
-        {/* <div className="bg-white rounded-[12px] py-4 grid grid-cols-4 grid-row-2 w-full border p-2">
-          <div className=" border pr-2">
-            <div className="">1</div>
-            <Image
-              src="/Collections/img1.svg"
-              width="100"
-              height="195"
-              className="w-[100%] rounded-[12px]"
-              alt="NFT"
-            />
-          </div>
-          <div className="grid border col-span-2">
-            <Image
-              src="/Collections/img2.svg"
-              width="100"
-              height="20"
-              className=" rounded-[12px]"
-              alt="NFT"
-            />
-            2
-          </div>
-          <div>
-            <Image
-              src="/Collections/img2.svg"
-              width="100"
-              height="195"
-              className="w-[100%] rounded-[12px]"
-              alt="NFT"
-            />
-            3
-          </div>
-          <div>3</div>
-          <div>3</div>
-          <div>3</div>
-          <div>3</div>
-          <div>3</div>
-        </div> */}
-        <div>
-          dfsdfsdf adfsdf
-          <h1>khadija</h1>
-          <p>aliya</p>
-        </div>
+                    <h2>128 ETH</h2>
+                  </div>
+                  <div className="flex justify-between text-purply-blue text-xs">
+                    <p>Floor: 19 ETH ~ $108.7K</p>
+                    <p>-29%</p>
+                  </div>
+                </div>
+              </div>
+            </>
+          );
+        })}
       </div>
     </div>
   );
 };
 
 export default Collections;
+const COLLECTION_CARD = ["", "", ""];
