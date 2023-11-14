@@ -22,14 +22,13 @@ const HeroSetion = () => {
               </p>
             </div>
 
-            <a href="#arrow">
-              <CustomButton
-                btnText=" Explore now"
-                btnIcon="/hero/arrow-right.svg"
-                className="explore py-1.5 pl-6 pr-2 rounded-[12px] text-white flex gap-3 font-medium items-center"
-                btnIconClassName="p-2 bg-white rounded-[10px]"
-              />
-            </a>
+            <CustomButton
+              btnText=" Explore now"
+              btnIcon="/hero/arrow-right.svg"
+              className="explore py-1.5 pl-6 pr-2 rounded-[12px] text-white flex gap-3 font-medium items-center"
+              btnIconClassName="p-2 bg-white rounded-[10px]"
+              href="#arrow"
+            />
           </div>
           <div className="w-[50%] relative ">
             <div className="absolute w-full h-full">
