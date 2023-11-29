@@ -19,7 +19,7 @@ const Collections = () => {
                     <Image
                       src={image1}
                       alt=""
-                      className="w-full  rounded-[12px]"
+                      className="w-full h-full object-cover  rounded-[12px]"
                     />
                   </div>
                   <div className=" col-span-2 rounded-[12px]  ">
