@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import CustomButton from "./CustomButton";
 import CustomSelect from "./CustomSelect";
+// import CustomTabs from "./CustomTabs";
 interface CustomHeaderProps {
   title: string;
   className: string;
