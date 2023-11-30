@@ -1,3 +1,4 @@
+import Artists from "@/components/Artists";
 import Auctions from "@/components/Auctions";
 import Collections from "@/components/Collections";
 import HeroSetion from "@/components/HeroSection";
@@ -9,6 +10,7 @@ export default function Home() {
       <HeroSetion />
       <Auctions />
       <Collections />
+      <Artists />
     </main>
   );
 }
