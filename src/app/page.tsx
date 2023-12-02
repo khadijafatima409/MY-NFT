@@ -1,7 +1,7 @@
 import Artists from "@/components/Artists";
 import Auctions from "@/components/Auctions";
 import Collections from "@/components/Collections";
-import CustomTabs from "@/components/CustomTabs";
+// import CustomTabs from "@/components/CustomTabs";
 import HeroSetion from "@/components/HeroSection";
 // import Image from "next/image";
 
@@ -12,7 +12,7 @@ export default function Home() {
       <Auctions />
       <Collections />
       <Artists />
-      <CustomTabs />
+      {/* <CustomTabs /> */}
     </main>
   );
 }
