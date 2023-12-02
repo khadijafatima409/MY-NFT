@@ -5,10 +5,12 @@ import image1 from "../../public/collections/img1.svg";
 import image2 from "../../public/collections/img2.svg";
 import image3 from "../../public/collections/img3.svg";
 import image4 from "../../public/collections/img4.svg";
+import CollectionsHeader from "./CollectionsHeader";
 const Collections = () => {
   return (
     <div className="w-[80%] mx-auto ">
       <CustomHeader title="Popular Collections" className="text-blue" />
+      <CollectionsHeader />
       <div className="max-w-full pt-10 pb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {COLLECTION_CARD.map((elrment) => {
           return (
