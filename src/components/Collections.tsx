@@ -9,8 +9,8 @@ import CollectionsHeader from "./CollectionsHeader";
 const Collections = () => {
   return (
     <div className="w-[80%] mx-auto ">
-      <CustomHeader title="Popular Collections" className="text-blue" />
-      <CollectionsHeader />
+      {/* <CustomHeader title="Popular Collections" className="text-blue" /> */}
+      <CollectionsHeader title="Popular Collections" className="text-blue" />
       <div className="max-w-full pt-10 pb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {COLLECTION_CARD.map((elrment) => {
           return (
