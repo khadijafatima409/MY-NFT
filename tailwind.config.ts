@@ -18,6 +18,7 @@ const config: Config = {
         "grey-blue": "#6E84AB",
         zodiac: "#11315B",
         "purply-blue": "#9D9BB9",
+        "dark-purple": "#451254",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
