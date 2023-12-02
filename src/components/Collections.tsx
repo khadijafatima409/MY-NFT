@@ -9,10 +9,10 @@ import CollectionsHeader from "./CollectionsHeader";
 const Collections = () => {
   return (
     <div className="w-[80%] mx-auto ">
-      {/* <CustomHeader title="Popular Collections" className="text-blue" /> */}
-      <CollectionsHeader title="Popular Collections" className="text-blue" />
+      <CustomHeader title="Popular Collections" className="text-blue" />
+      {/* <CollectionsHeader title="Popular Collections" className="text-blue" /> */}
       <div className="max-w-full pt-10 pb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
-        {COLLECTION_CARD.map((elrment) => {
+        {COLLECTION_CARD.map((element) => {
           return (
             <>
               <div className=" bg-white p-4 rounded-[12px]">
@@ -24,7 +24,7 @@ const Collections = () => {
                       className="w-full h-full object-cover  rounded-[12px]"
                     />
                   </div>
-                  <div className=" col-span-2 rounded-[12px]  ">
+                  <div className="col-span-2 rounded-[12px]  ">
                     <Image
                       src={image2}
                       alt=""
@@ -44,8 +44,8 @@ const Collections = () => {
                       alt=""
                       className="w-full rounded-[12px]"
                     />
-                    <div className="absolute h-full w-full bg-black opacity-50 top-0 rounded-[12px]">
-                      <h2 className="text-white text-center">+12</h2>
+                    <div className="absolute h-full w-full bg-black opacity-50 top-0 rounded-[12px] flex justify-center items-center">
+                      <h2 className="text-white text-opacity-100">+12</h2>
                     </div>
                   </div>
                 </div>
