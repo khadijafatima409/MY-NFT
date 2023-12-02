@@ -3,7 +3,12 @@ import React from "react";
 import Box from "@mui/material/Box";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
-const CustomTabs = ({ label1, label2, label3 }) => {
+interface CustomTabsProps {
+  label1: string;
+  label2: string;
+  label3: string;
+}
+const CustomTabs = ({ label1, label2, label3 }: CustomTabsProps) => {
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event: React.SyntheticEvent, newValue: number) => {
