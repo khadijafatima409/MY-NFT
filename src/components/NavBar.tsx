@@ -24,13 +24,10 @@ const NavBar = () => {
         <li>
           <img src="/search.svg" alt="" />
         </li>
-        <a href="#connect" className=" text-cyan-blue hover:text-white">
-          {/* <button className="border px-4 py-3 rounded-[12px]">
-            Connect wallet
-          </button> */}
+        <a href="#connect">
           <CustomButton
             btnText="Connect wallet"
-            className="border px-4 py-3 rounded-[12px]"
+            className="border px-4 py-3 rounded-[12px] text-cyan-blue hover:text-white"
           />
         </a>
       </ul>
