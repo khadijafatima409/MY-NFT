@@ -7,11 +7,12 @@ import CustomSelect from "./CustomSelect";
 interface CustomHeaderProps {
   title: string;
   className: string;
+  tabs: React.ReactNode;
 }
-const CustomHeader = ({ title, className }: CustomHeaderProps) => {
+const CustomHeader = ({ title, className, tabs }: CustomHeaderProps) => {
   return (
     <div>
-      <div className="flex  justify-between">
+      <div className="flex  justify-between border">
         <div className="flex gap-10">
           <h1 className={`text-[32px] font-semibold ${className} `}>{title}</h1>
           <CustomSelect
@@ -19,6 +20,7 @@ const CustomHeader = ({ title, className }: CustomHeaderProps) => {
             items={["Ethereum", "Coin1", "Coin2"]}
           />
         </div>
+        {tabs && <div className="">{tabs}</div>}
         <div className=" flex gap-3">
           <CustomButton
             btnText="See all"

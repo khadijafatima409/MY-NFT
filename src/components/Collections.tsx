@@ -5,11 +5,16 @@ import image1 from "../../public/collections/img1.svg";
 import image2 from "../../public/collections/img2.svg";
 import image3 from "../../public/collections/img3.svg";
 import image4 from "../../public/collections/img4.svg";
-import CollectionsHeader from "./CollectionsHeader";
+import CustomTabs from "./CustomTabs";
+
 const Collections = () => {
   return (
     <div className="w-[80%] mx-auto ">
-      <CustomHeader title="Popular Collections" className="text-blue" />
+      <CustomHeader
+        title="Popular Collections"
+        className="text-blue"
+        tabs={<CustomTabs label1="Tab 1" label2="Tab 2" label3="Tab 3" />}
+      />
       {/* <CollectionsHeader title="Popular Collections" className="text-blue" /> */}
       <div className="max-w-full pt-10 pb-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
         {COLLECTION_CARD.map((element) => {
