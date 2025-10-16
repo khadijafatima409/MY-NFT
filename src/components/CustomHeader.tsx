@@ -7,7 +7,7 @@ import CustomSelect from "./CustomSelect";
 interface CustomHeaderProps {
   title: string;
   className: string;
-  tabs: React.ReactNode;
+  tabs?: React.ReactNode;
 }
 const CustomHeader = ({ title, className, tabs }: CustomHeaderProps) => {
   return (
