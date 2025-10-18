@@ -12,7 +12,7 @@ interface CustomHeaderProps {
 const CustomHeader = ({ title, className, tabs }: CustomHeaderProps) => {
   return (
     <div>
-      <div className="flex  justify-between border">
+      <div className="flex justify-between">
         <div className="flex gap-10">
           <h1 className={`text-[32px] font-semibold ${className} `}>{title}</h1>
           <CustomSelect
